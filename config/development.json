@@ -1,0 +1,12 @@
+{
+  "server": {
+    "port": 5000
+  },
+  "mysql": {
+    "host": "13.13.13.177",
+    "user": "find",
+    "password": "123456",
+    "database": "findpiano",
+    "connectionLimit" : 10
+  }
+}

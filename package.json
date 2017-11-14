@@ -1,0 +1,22 @@
+{
+  "name": "koa2",
+  "version": "1.0.0",
+  "description": "structure of a simple koa2 server project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "apple",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "2.2.0",
+    "koa-bodyparser": "4.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "7.1.1",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {}
+}
