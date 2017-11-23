@@ -3,8 +3,7 @@ const query = require('../mysql')
 const M = require('../utils/messages')
 const MR = require('../utils/makeResult')
 
-module.exports = async function(ctx) {
-
+const login = async ctx => {
   try {
     const { username, password } = ctx.request.body
     if (username && password) {
@@ -20,5 +19,6 @@ module.exports = async function(ctx) {
   } catch (e) {
     ctx.body = MR(e.message)
   }
-
 }
+
+exports.login = login;

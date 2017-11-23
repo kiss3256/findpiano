@@ -11,7 +11,7 @@ const router = require('./router')
 const bodyParser = require('koa-bodyparser')
 
 app.use(async function(ctx, next) {
-  ctx.set("Access-Control-Allow-Origin", ctx.request.header.origin)
+  ctx.set("Access-Control-Allow-Origin", "*");
   ctx.set("Access-Control-Allow-Credentials", true);
   ctx.set("Access-Control-Max-Age", 86400000);
   ctx.set("Access-Control-Allow-Methods", "OPTIONS, GET, PUT, POST, DELETE");
